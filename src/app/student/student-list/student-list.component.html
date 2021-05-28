@@ -1,0 +1,20 @@
+<div class='row'>
+  <div class='col-md-12'>
+    <div class='col-md-5'>
+      <button type='button' class='btn btn-success'>New Student</button>
+    </div>
+  </div>
+</div>
+<hr>
+<div class="row">
+  <div class="col-sm-12">
+
+    <div class="list-group">
+      <app-one-student 
+      *ngFor='let student of students;let i =index' [students]='student' [index]='i'
+      ></app-one-student>
+    </div>
+
+    <app-one-student></app-one-student>
+  </div>
+</div>
